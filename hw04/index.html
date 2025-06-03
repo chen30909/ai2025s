@@ -154,11 +154,12 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的文生圖作業讓我體驗到生成式AI的魅力，也加深了我對Stable Diffusion系統架構的理解。透過簡單的文字提示，就能產出風格各異、內容豐富的圖像，過程既直觀又令人驚喜。尤其在調整提示詞、噪聲種子、LoRA權重與ControlNet等參數的過程中，我發現每一個細節的微調都會對結果造成顯著影響，這促使我不斷實驗與修正，也逐漸掌握了生成圖像的關鍵控制點。整體來說，這次作業不僅讓我提升了技術操作能力，也激發了我對AI藝術創作的興趣。
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <table>
@@ -170,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,17 +196,58 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+        <img src="工作流.png" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
 
+        1344 * 768
+
+        LoRA Strength : 1.0
+        
+        Positive： masterpiece, best quality, high score, great score, absurdres, illustration, pointy ears, 1girl, 1frieren, long hair, flower, head wreath, smile, petals, earrings, jewelry,frilly dress, elf, sitting, blue flower, outdoors,soft lighting,peaceful atmosphere, green eyes, long sleeves, sky, side view, same size, solo focus, closed mouth, white hair, falling petals, glowing, lora:mix-a4-v2:1
+        Negative： lowres, bad anatomy, bad hands, text, error, missing finger, extra digits, fewer digits, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry,
+    
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1188071?modelVersionId=1337429'" value="Checkpoint連結">
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1209474/a4-test?modelVersionId=1373925'" value="LoRA連結">
+        <img src="完成芙莉蓮文生圖.png" width="100%"/>
+      </figure>
+      </div>
+    </div>
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>完成辛梅爾文生圖</figcaption>
+
+        1344 * 768
+
+        LoRA1 Strength : 0.3
+        LoRA2 Strength : 0.3
+        Positive：masterpiece, best quality, 1boy, 1girl, frieren, snow, winter, falling snowflakes, outdoors, upper body, eye contact, light blue hair, hooded cape with fur trim, earrings, visible cold breath, soft diffused lighting, day, hand warming boy's hands, kesyeru, sousou no frieren <lora:mix-a4-v2:1>,
+        Negative：nsfw, lowres, bad anatomy, bad hands, malformed hands, mutated hands, badhandv4, missing fingers, extra digit, fewer digits, bad fingers, extra fingers, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
+
+
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/820208/obsession-illustrious-xl'" value="Checkpoint連結">
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1204563?modelVersionId=1356500'" value="LoRA連結1">
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1201355/r754496-or-shiiros-styles-or-niji'" value="LoRA連結2">
+
+        <img src="完成辛梅爾文生圖.png" width="100%"/>
+      </figure>
+      </div>
+    </div>
+
+
 
 
 <script>
