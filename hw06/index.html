@@ -154,8 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
-    </div>
+這次的作業雖然在流程設計上與作業四相似，但在實作細節上仍有不少挑戰。其中最花時間的部分是ComfyUI頁面的載入與影片生成處理，特別是在等待渲染與資源配置時需要耐心調整。透過自己撰寫的動作提示詞，角色在影片中展現出高度的生命力，也讓我對文生影技術有了更深的體會。最後，將成品整理並上傳至自己的 GitHub，不僅完成了作業，也累積了可展示的實作經驗。    </div>
   </div>
 
   <!-- ------------------------------------------------>
@@ -170,22 +169,23 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫
+</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -197,12 +197,50 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <a href="https://civitai.com/api/download/models/1373925?type=Model&format=SafeTensor">CheckPoint:based64_v30</a><br>
+      <a href="https://civitai.com/api/download/models/57088?type=Model&format=SafeTensor">Lora:  chibi-laugh</a><br> 
+       <td>1.Simple baseline - Comfy UI 環境設定完成</td><br>
+       <img src="1.png"  width="800" height="200"><br>
     </div>
   </div>
-
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>2.Medium baseline - 生成角色的圖片</td><br>
+       <img src="2.png"  width="500" height="600"><br>
+       <td> 使用提示詞:
+      "0" :"spring day, floral skirt, wind, hair accessories, smile",
+      "10" :"spring day, floral skirt, wind, hair accessories, smile",
+      "20" :"spring day, floral skirt, wind, hair accessories, smile",
+"30" :"summer day, short-sleeved dress, straw hat",
+"40" :"summer day, short-sleeved dress, straw hat",
+"50" :"summer day, short-sleeved dress, straw hat",
+"60" :"fall day, sweater, slim jeans, wind, fallen leaves",
+"70" :"fall day, sweater, slim jeans, wind, fallen leaves",
+"80" :"fall day, sweater, slim jeans, wind, fallen leaves",
+"90" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes",
+"100" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes",
+"110" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes"</td>
+    </div>
+  </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>3.Strong baseline - 生成完整角色動畫</td><br>
+       <img src="3.gif" ><br>
+       <td> 使用提示詞:
+      "0" :"spring day, floral skirt, wind, hair accessories, smile",
+      "10" :"spring day, floral skirt, wind, hair accessories, smile",
+      "20" :"spring day, floral skirt, wind, hair accessories, smile",
+"30" :"summer day, short-sleeved dress, straw hat",
+"40" :"summer day, short-sleeved dress, straw hat",
+"50" :"summer day, short-sleeved dress, straw hat",
+"60" :"fall day, sweater, slim jeans, wind, fallen leaves",
+"70" :"fall day, sweater, slim jeans, wind, fallen leaves",
+"80" :"fall day, sweater, slim jeans, wind, fallen leaves",
+"90" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes",
+"100" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes",
+"110" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes"</td>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
